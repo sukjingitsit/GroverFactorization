@@ -12,7 +12,7 @@ Finally, the probabilities of each state in p and q is calculated and the two ma
 
 ### About the Code
 
-The code is commented and annotated, and each step of the code is explained properly. Before running the code, make sure to specify the number to be factored as N. This number should be a bi-prime to ensure the correctness of the algorithm, else it may have errors. The dependencies required for this code are Pennylane, Matplotlib and Numpy alongside the in-built Python library math.
+The code is commented and annotated, and each step of the code is explained properly. Before running the code, make sure to specify the number to be factored as N. This number should be a bi-prime to ensure the correctness of the algorithm, else it may have errors. The dependencies required for this code are Pennylane, Matplotlib and Numpy alongside the in-built Python library math. The code runs well for the case of 35 and 115, albeit the convergence is very slow for 893.
 
 ### Potential Optimizations
 The algorithm can be optimized further by reducing the number of bits used to store p and q to an optimal size which allows them to store the divisors of p and q by utilising the fact that the number of bits to represent p should be less than or equal to half the bits. Further, we can also optimize the algorithm using the result derived in the paper Quantum Factoring Algorithm using Grover Search.
